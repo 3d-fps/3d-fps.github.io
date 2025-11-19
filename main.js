@@ -18,7 +18,7 @@ scene.add(directionalLight);
 // Create the floor
 const floor = new THREE.Mesh(
     new THREE.PlaneGeometry(50, 50),
-    new THREE.MeshStandardMaterial({ color: 0x808080 })
+    new THREE.MeshNormalMaterial()
 );
 floor.rotation.x = -Math.PI / 2;
 scene.add(floor);
