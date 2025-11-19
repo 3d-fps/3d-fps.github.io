@@ -69,8 +69,8 @@ function animate() {
     const velocity = new THREE.Vector3();
 
     // Check for pressed keys and update velocity
-    if (keyState['KeyW']) velocity.z -= speed;
-    if (keyState['KeyS']) velocity.z += speed;
+    if (keyState['KeyW']) velocity.z += speed;
+    if (keyState['KeyS']) velocity.z -= speed;
     if (keyState['KeyA']) velocity.x -= speed;
     if (keyState['KeyD']) velocity.x += speed;
 
